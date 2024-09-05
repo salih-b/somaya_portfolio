@@ -20,7 +20,11 @@ li {
   font-family: "Sevillana", cursive;
 }
 
-.somaya-logo__white{
+.dark-theme .somaya-logo{
+  color: hotpink;
+}
+
+.somaya-logo__white, .dark-theme .somaya-logo__white{
   color: white;
 }
 
@@ -143,16 +147,9 @@ nav,
 .header {
   opacity: 1;
   visibility: visible;
-  transition: all 600ms 800ms;
+  transition: all 800ms ease;
 }
 
-/* .modal--open nav,
-.modal--open .scroll,
-.modal--open .header {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 400ms;
-} */
 
 .dark-theme .title,
 .dark-theme .section__title,
@@ -336,7 +333,8 @@ nav {
   display: flex;
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms ease;
+  z-index: -10;
+  transition: all 500ms ease-in-out;
 }
 
 .modal__half{
@@ -350,11 +348,15 @@ nav {
 
 .modal__about{
   background-color: rgb(255, 105, 180);
+  transform: translateX(-110%);
+  transition: all 500ms ease-in;
   
 }
 .modal__contact{
   background-color: #242424;
   color: white;
+  transform: translateX(110%);
+  transition: all 500ms ease-in;
 }
 
 .white-text{
@@ -451,6 +453,7 @@ nav {
   background-color: #242424;
   font-size: 80px;
   z-index: -1;
+  display: none;
 }
 .modal__overlay--success{
   background-color: #4bb543;
@@ -459,10 +462,12 @@ nav {
   text-align: center;
   padding: 28px;
   z-index: -1;
+  display: none;
 }
 
 .modal__overlay--visible{
   z-index: 10;
+  display: flex;
 }
 
 .fa-spinner{
@@ -614,27 +619,28 @@ footer {
   SHAPES
 
   shapes on the first row 
-  height = 15vh
+  Top height = 15vh
   
   shapes on the second row 
-  height = 50vh
+  Top height = 50vh
   
   shapes on the third row 
-  height = 80vh
+  Top height = 80vh
 
   shapes on the first column
-  width = 5vw
+  Left width = 5vw
   
   shapes on the second column
-  width = 50vw
+  Left width = 50vw
 
   shapes on the third column
-  width = 80vw
+  Left width = 80vw
 
 */
 .shape {
   position: fixed;
 }
+/* FIRST ROW */
 .shape--0 {
   top: 15vh;
   left: 5vw;
@@ -647,6 +653,8 @@ footer {
   top: 15vh;
   left: 80vw;
 }
+
+/* SECOND ROW */
 .shape--3 {
   top: 50vh;
   left: 5vw;
@@ -659,6 +667,8 @@ footer {
   top: 50vh;
   left: 80vw;
 }
+
+/* THIRD ROW */
 .shape--6 {
   top: 80vh;
   left: 5vw;
@@ -672,7 +682,6 @@ footer {
   left: 80vw;
 }
 
-/* ADDED AFTER TUTORIAL */
 .footer__logo--popper {
   position: absolute;
   right: 0;

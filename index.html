@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <section id="landing-page">
+  <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <figure class="">
         <h1 class="somaya-logo">SA</h1>
@@ -46,7 +46,7 @@
           onclick="toggleModal()"
           >Contact</a>
         </li>
-        <li class="nav__link click">
+        <li class="nav__link click" onclick="toggleContrast()">
           <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -130,7 +130,7 @@
             <input required name="user_email" type="email" class="input">
           </div>
           <div class="form__item">
-            <label class="form__item--label">Name</label>
+            <label class="form__item--label">Message</label>
             <textarea required name="message" type="text" class="input"></textarea>
           </div>
           <button id="contact__submit" class="form__submit">Send it!</button>
@@ -154,7 +154,7 @@
     <img src="./assets/circle.svg" class="shape shape--7">
     <img src="./assets/semi circle.svg" class="shape shape--8">
   </section>
-  <section id="projects">
+  <section id="projects" onmousemove="moveBackground(event)">
     <div class="container">
       <div class="row">
         <h1 class="section__title">
@@ -247,7 +247,7 @@
       </div>
     </div>
   </section>
-  <footer>
+  <footer onmousemove="moveBackground(event)">
     <div class="container">
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
