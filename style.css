@@ -702,6 +702,12 @@ footer {
 }
 
 /* Small phones, tablets, large smart phones */
+@media (max-width:820px) {
+  p{
+    font-size:14px;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 80px;
