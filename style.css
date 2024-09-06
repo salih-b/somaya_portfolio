@@ -31,7 +31,7 @@ li {
 
 p {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a {
@@ -709,7 +709,7 @@ footer {
   .header__para {
     font-size: 20px;
   }
-  /* .modal {
+  .modal {
     top: 0;
     left: 0;
     transform: none;
@@ -720,7 +720,7 @@ footer {
   }
   .modal__half {
     width: 100%;
-  } */
+  } 
 }
 
 /* Small phones */
@@ -746,7 +746,7 @@ footer {
   .project__description--sub-title {
     margin-bottom: 8px;
   }
-  /* .modal__half {
+  .modal__half {
     padding: 40px;
-  } */
+  } 
 }
