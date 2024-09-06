@@ -31,7 +31,7 @@ li {
 
 p {
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 a {
@@ -720,7 +720,7 @@ footer {
   }
   .modal__half {
     width: 100%;
-  }
+  } 
   .project__description--para {
     display: none;
   }
@@ -755,5 +755,5 @@ footer {
   }
   .modal__half {
     padding: 40px;
-  }
+  } 
 }
