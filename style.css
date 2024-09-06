@@ -31,7 +31,7 @@ li {
 
 p {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a {
@@ -709,7 +709,7 @@ footer {
   .header__para {
     font-size: 20px;
   }
-  /* .modal {
+  .modal {
     top: 0;
     left: 0;
     transform: none;
@@ -720,7 +720,13 @@ footer {
   }
   .modal__half {
     width: 100%;
-  } */
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description--sub-title {
+    font-size: 24px;
+  }
 }
 
 /* Small phones */
@@ -734,19 +740,20 @@ footer {
   .nav__link:first-child {
     display: none;
   }
-  .project__description--para {
-    display: none;
-  }
   .project__description {
     left: 0;
     padding: 0;
     width: 100%;
     text-align: center;
   }
+  .project__description--title {
+    font-size: 32px;
+  }
   .project__description--sub-title {
     margin-bottom: 8px;
+    font-size: 20px;
   }
-  /* .modal__half {
+  .modal__half {
     padding: 40px;
-  } */
+  }
 }
